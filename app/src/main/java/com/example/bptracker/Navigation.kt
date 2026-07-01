@@ -37,7 +37,9 @@ fun MainNavigation(isFirstLaunch: Boolean, startDestination: String? = null) {
             onNavigateToAddBp = { backStack.add(BpStats) },
             onNavigateToAddSugar = { backStack.add(AddSugar) },
             onNavigateToAddHeart = { backStack.add(HeartStats) },
-            onNavigateToBmi = { backStack.add(Bmi) }
+            onNavigateToBmi = { backStack.add(Bmi) },
+            onNavigateToPrivacy = { backStack.add(PrivacyPolicy) },
+            onNavigateToTerms = { backStack.add(TermsOfUse) }
           )
         }
         entry<AddBp> {
@@ -83,6 +85,12 @@ fun MainNavigation(isFirstLaunch: Boolean, startDestination: String? = null) {
         entry<AddHistoricalRecord> {
           val type = it.type
           com.example.bptracker.ui.main.AddHistoricalRecordScreen(recordType = type, onBack = { backStack.removeLastOrNull() })
+        }
+        entry<PrivacyPolicy> {
+          com.example.bptracker.ui.main.PrivacyPolicyScreen(onNavigateBack = { backStack.removeLastOrNull() })
+        }
+        entry<TermsOfUse> {
+          com.example.bptracker.ui.main.TermsOfUseScreen(onNavigateBack = { backStack.removeLastOrNull() })
         }
       },
   )

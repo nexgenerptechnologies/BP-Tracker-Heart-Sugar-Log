@@ -41,9 +41,17 @@ import com.example.bptracker.utils.ReminderManager
 import java.util.Calendar
 
 @Composable
-fun SettingsScreen() {
+fun SettingsScreen(
+    onNavigateToPrivacy: () -> Unit = {},
+    onNavigateToTerms: () -> Unit = {}
+) {
     val context = LocalContext.current
     val notificationPermissionLauncher = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { }
+    var showRatingDialog by remember { mutableStateOf(false) }
+
+    if (showRatingDialog) {
+        RatingDialog(onDismiss = { showRatingDialog = false })
+    }
 
     LaunchedEffect(Unit) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
@@ -185,13 +193,7 @@ fun SettingsScreen() {
             shape = RoundedCornerShape(16.dp)
         ) {
                 SettingsRow(title = androidx.compose.ui.res.stringResource(R.string.settings_rate), value = "", icon = androidx.compose.material.icons.Icons.Default.Star, onClick = {
-                    try {
-                        val intent = android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse("market://details?id=${context.packageName}"))
-                        context.startActivity(intent)
-                    } catch (e: Exception) {
-                        val intent = android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse("https://play.google.com/store/apps/details?id=${context.packageName}"))
-                        context.startActivity(intent)
-                    }
+                    showRatingDialog = true
                 })
                 Divider(color = Color(0xFF1E213A), thickness = 1.dp)
                 SettingsRow(title = androidx.compose.ui.res.stringResource(R.string.settings_share), value = "", icon = androidx.compose.material.icons.Icons.Default.Share, onClick = {
@@ -215,17 +217,11 @@ fun SettingsScreen() {
                 })
                 Divider(color = Color(0xFF1E213A), thickness = 1.dp)
                 SettingsRow(title = androidx.compose.ui.res.stringResource(R.string.settings_privacy), value = "", icon = androidx.compose.material.icons.Icons.Default.Description, onClick = {
-                    try {
-                        val intent = android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse("https://google.com"))
-                        context.startActivity(intent)
-                    } catch (e: Exception) { }
+                    onNavigateToPrivacy()
                 })
                 Divider(color = Color(0xFF1E213A), thickness = 1.dp)
                 SettingsRow(title = androidx.compose.ui.res.stringResource(R.string.settings_terms), value = "", icon = androidx.compose.material.icons.Icons.Default.Bookmark, onClick = {
-                    try {
-                        val intent = android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse("https://google.com"))
-                        context.startActivity(intent)
-                    } catch (e: Exception) { }
+                    onNavigateToTerms()
                 })
         }
         

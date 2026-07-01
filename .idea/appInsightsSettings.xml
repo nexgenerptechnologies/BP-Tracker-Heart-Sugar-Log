@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.bptracker" />
+                  <option name="mobileSdkAppId" value="1:208922137403:android:b6ce3bf5a4c00937d71d1e" />
+                  <option name="projectId" value="bp-tracker-d29b9" />
+                  <option name="projectNumber" value="208922137403" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

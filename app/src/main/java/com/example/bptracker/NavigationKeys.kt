@@ -9,6 +9,8 @@ import kotlinx.serialization.Serializable
 @Serializable data object AddHeart : NavKey
 @Serializable data class History(val initialFilter: String = "All") : NavKey
 @Serializable data class AddHistoricalRecord(val type: String) : NavKey
+@Serializable data object PrivacyPolicy : NavKey
+@Serializable data object TermsOfUse : NavKey
 @Serializable data object Bmi : NavKey
 @Serializable data object Welcome : NavKey
 @Serializable data object HeartStats : NavKey

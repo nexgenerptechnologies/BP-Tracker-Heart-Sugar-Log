@@ -48,7 +48,9 @@ fun MainScreen(
     onNavigateToAddSugar: () -> Unit,
     onNavigateToAddHeart: () -> Unit,
     onNavigateToBmi: () -> Unit,
-    onNavigateToSteps: () -> Unit = {}
+    onNavigateToSteps: () -> Unit = {},
+    onNavigateToPrivacy: () -> Unit = {},
+    onNavigateToTerms: () -> Unit = {}
 ) {
     var currentTab by remember { mutableStateOf(if (startDestination == "add_meds") 2 else 0) }
     var showHistory by remember { mutableStateOf(false) } 
@@ -137,7 +139,10 @@ fun MainScreen(
                     preSelectedArticle = homeSelectedArticle, 
                     onBackFromArticle = { homeSelectedArticle = null }
                 )
-                4 -> SettingsScreen()
+                4 -> SettingsScreen(
+                    onNavigateToPrivacy = onNavigateToPrivacy,
+                    onNavigateToTerms = onNavigateToTerms
+                )
             }
         }
         
