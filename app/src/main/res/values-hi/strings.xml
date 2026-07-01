@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BP Tracker</string>
+    <string name="tab_home">होम</string>
+    <string name="tab_analytics">एनालिटिक्स</string>
+    <string name="tab_meds">दवाइयां</string>
+    <string name="tab_info">जानकारी</string>
+    <string name="tab_settings">सेटिंग्स</string>
+    <string name="card_bp">रक्तचाप</string>
+    <string name="card_sugar">रक्त शर्करा</string>
+    <string name="card_heart">हृदय गति</string>
+    <string name="card_bmi">बीएमआई</string>
+    <string name="card_water">हाइड्रेशन</string>
+    <string name="card_steps">दैनिक कदम</string>
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_reminders">निर्धारित अनुस्मारक</string>
+    <string name="settings_general">सामान्य</string>
+    <string name="settings_language">ऐप की भाषा</string>
+    <string name="settings_theme">थीम</string>
+    <string name="settings_dark_mode">डार्क मोड</string>
+    <string name="settings_export_data">डेटा निर्यात (PDF)</string>
+    <string name="settings_about">हमारे बारे में</string>
+    <string name="settings_rate">ऐप को रेट करें</string>
+    <string name="settings_share">ऐप शेयर करें</string>
+    <string name="settings_feedback">फीडबैक दें</string>
+    <string name="settings_privacy">गोपनीयता नीति</string>
+    <string name="settings_terms">उपयोग की शर्तें</string>
+    <string name="card_medications">दवाइयां</string>
+</resources>

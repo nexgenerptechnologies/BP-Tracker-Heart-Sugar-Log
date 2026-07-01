@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BP Tracker</string>
+    <string name="tab_home">Inicio</string>
+    <string name="tab_analytics">Análisis</string>
+    <string name="tab_meds">Meds</string>
+    <string name="tab_info">Info</string>
+    <string name="tab_settings">Ajustes</string>
+    <string name="card_bp">Presión Arterial</string>
+    <string name="card_sugar">Azúcar</string>
+    <string name="card_heart">Ritmo Cardíaco</string>
+    <string name="card_bmi">IMC</string>
+    <string name="card_water">Hidratación</string>
+    <string name="card_steps">Pasos</string>
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_reminders">Recordatorios Programados</string>
+    <string name="settings_general">General</string>
+    <string name="settings_language">Idioma de la App</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_dark_mode">Modo Oscuro</string>
+    <string name="settings_export_data">Exportar Datos (PDF)</string>
+    <string name="settings_about">Acerca y Soporte</string>
+    <string name="settings_rate">Calificar en Google Play</string>
+    <string name="settings_share">Compartir App</string>
+    <string name="settings_feedback">Dejar Comentarios</string>
+    <string name="settings_privacy">Política de Privacidad</string>
+    <string name="settings_terms">Términos de Uso</string>
+    <string name="card_medications">Medicamentos</string>
+</resources>

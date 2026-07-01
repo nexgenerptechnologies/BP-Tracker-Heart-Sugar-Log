@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:padding="8dp">
+
+    <!-- Blood Pressure Panel -->
+    <LinearLayout
+        android:id="@+id/panel_bp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="4dp"
+        android:background="#2E7D32"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Pressure"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_bp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--/--"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mmHg"
+            android:textColor="#E0E0E0"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btn_record_bp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="Record"
+            android:textColor="#2E7D32"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Heart Rate Panel -->
+    <LinearLayout
+        android:id="@+id/panel_hr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:background="#F57C00"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart Rate"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_hr_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BPM"
+            android:textColor="#E0E0E0"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btn_measure_hr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="Measure"
+            android:textColor="#F57C00"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Blood Sugar Panel -->
+    <LinearLayout
+        android:id="@+id/panel_sugar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="4dp"
+        android:background="#1976D2"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Sugar"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_sugar_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mg/dL"
+            android:textColor="#E0E0E0"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btn_record_sugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="Record"
+            android:textColor="#1976D2"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Medications Panel -->
+    <LinearLayout
+        android:id="@+id/panel_meds"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="4dp"
+        android:background="#7B1FA2"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medications"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_meds_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Pill"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now"
+            android:textColor="#E0E0E0"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btn_record_meds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="Log"
+            android:textColor="#7B1FA2"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
