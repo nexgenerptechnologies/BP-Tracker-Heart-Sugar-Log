@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "208922137403",
+    "project_id": "bp-tracker-d29b9",
+    "storage_bucket": "bp-tracker-d29b9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208922137403:android:b6ce3bf5a4c00937d71d1e",
+        "android_client_info": {
+          "package_name": "com.example.bptracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGMg_C2wGkdo-VOhDo8HEFmqXoCfPA1yU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

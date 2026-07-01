@@ -2,6 +2,7 @@ plugins {
   alias(libs.plugins.android.application)
   alias(libs.plugins.compose.compiler)
   alias(libs.plugins.kotlin.serialization)
+  id("com.google.gms.google-services")
 }
 
 android {
@@ -64,6 +65,10 @@ dependencies {
   implementation("androidx.compose.material:material-icons-core")
   implementation("androidx.compose.material:material-icons-extended")
   
+  // Firebase
+  implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+  implementation("com.google.firebase:firebase-analytics")
+
   // CameraX
   val camerax_version = "1.3.1"
   implementation("androidx.camera:camera-core:${camerax_version}")
